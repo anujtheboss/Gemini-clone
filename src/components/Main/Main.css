@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding-bottom: 15vh;
     position: relative;
+    font-family:Google Sans, Helvetica Neue, sans-serif;
 }
 
 .main .nav {
@@ -69,8 +70,9 @@
 }
 
 .main .card p {
-    color: #585858;
+    /* color: #585858; */
     font-size: 17px;
+    font-family:Google Sans, Helvetica Neue, sans-serif;
 }
 
 .main .card:hover {
@@ -146,6 +148,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    font-family:Google Sans, Helvetica Neue, sans-serif;
 }
 
 .result img {
@@ -157,6 +160,7 @@
     display: flex;
     align-items: start;
     gap: 20px;
+    font-family:Google Sans, Helvetica Neue, sans-serif;
 }
 
 .loader {
@@ -185,8 +189,98 @@
     }
 }
 
-.result-data p {
-    font-size: 17px;
+/* .result-data p {
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
+}
+.result-data pre {
+    background-color: #e9eef6;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.result-data code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 15px;
+}
+
+.result-data p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+} */
+/* ...existing code... */
+
+.result-data pre {
+    background-color: #e9eef6;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+/* Keywords */
+.hljs-keyword {
+    color: #d73a49;
+}
+
+/* Strings */
+.hljs-string {
+    color: #032f62;
+}
+
+/* Numbers */
+.hljs-number {
+    color: #005cc5;
+}
+
+/* Comments */
+.hljs-comment {
+    color: #6a737d;
+    font-style: italic;
+}
+
+/* Function names */
+.hljs-function {
+    color: #6f42c1;
+}
+
+/* Variables */
+.hljs-variable {
+    color: #24292e;
+}
+
+/* Class names */
+.hljs-class {
+    color: #22863a;
+}
+
+/* Regular text in code blocks */
+.result-data code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #24292e;
+}
+
+/* Inline code */
+.result-data :not(pre) > code {
+    /* background-color: #f6f8fa; */
+    color: #24292e;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 90%;
+}
+
+/* Regular text in result data */
+.result-data p {
+    color: #24292e;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.hljs{
+   background-color: #e9eef6;
 }
